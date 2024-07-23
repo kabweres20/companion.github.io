@@ -17,8 +17,6 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-
-	
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -199,36 +197,37 @@
 
 
 
-
 <!-- Glossary Section -->
-<section id="glossary" class="glossary section">
+<section id="glossary" class="glossary section py-5">
 
   <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Glossary and Vault</h2>
-    <p>Access detailed definitions of cosmetic procedures and securely store information in our vault.</p>
+  <div class="container section-title text-center mb-5" data-aos="fade-up">
+    <h2 class="display-4">Glossary</h2>
+    <p class="lead">Access detailed definitions of cosmetic procedures.</p>
   </div><!-- End Section Title -->
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="row gy-5">
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <h3>Cosmetic Procedures Defined</h3>
-        <p>Our glossary offers comprehensive definitions of cosmetic procedures, empowering you with knowledge for informed decisions. From facelifts to liposuction, each entry provides detailed insights into treatment options.</p>
-        <p>Utilize our vault to securely store detailed procedure guides. Whether you're researching treatments or preparing for consultations, our glossary and vault are invaluable resources for your aesthetic journey.</p>
-        <a href="#" class="btn btn-custom mt-3">Access Glossary</a>
+        <div class="p-4 rounded shadow-sm">
+          <h3 class="h4 mb-3">Cosmetic Procedures Defined</h3>
+          <p>Our glossary offers comprehensive definitions of cosmetic procedures, empowering you with knowledge for informed decisions. From facelifts to liposuction, each entry provides detailed insights into treatment options.</p>
+          <p>Whether you're researching treatments or preparing for consultations, our glossary is an invaluable resource for your aesthetic journey.</p>
+          <button type="button" class="btn btn-custom mt-3" data-toggle="modal" data-target="#glossaryModal">Access Glossary</button>
+        </div>
       </div>
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-        <div class="content ps-0 ps-lg-5" style =" list-style: none";>
-          
-          <ul>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Access detailed definitions of cosmetic procedures.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Securely store and access procedure guides in our vault.</span></li>
-            <li><i class="bi bi-check-circle-fill"></i> <span>Prepare for consultations with comprehensive knowledge.</span></li>
-          </ul>
-          <p>
-            Our glossary and vault are designed to educate and empower you, ensuring clarity and guidance throughout your journey to aesthetic enhancement.
-          </p>
+        <div class="p-4 rounded shadow-sm">
+          <div class="content ps-0 ps-lg-5">
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-check-circle-fill" style="color: #570987;"></i><span> Access detailed definitions of cosmetic procedures.</span></li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill" style="color: #570987;"></i><span> Prepare for consultations with comprehensive knowledge.</span></li>
+            </ul>
+            <p>
+              Our glossary is designed to educate and empower you, ensuring clarity and guidance throughout your journey to aesthetic enhancement.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -237,16 +236,580 @@
 
 </section><!-- /Glossary Section -->
 
+
+<!-- Glossary Modal -->
+<div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="glossaryModalLabel">Glossary of Cosmetic Procedures</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion" id="proceduresAccordion">
+          <!-- Populate with procedure definitions -->
+          <div class="card">
+            <div class="card-header" id="headingA">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseA" aria-expanded="true" aria-controls="collapseA">
+                  A - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseA" class="collapse show" aria-labelledby="headingA" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Abdominoplasty:</strong> A surgical procedure to remove excess skin and fat from the abdomen and to tighten the muscles of the abdominal wall.<br>
+                <strong>Arm Lift (Brachioplasty):</strong> A surgical procedure to remove excess skin and fat from the upper arms.<br>
+                <strong>Arthritis:</strong> Treatment options to manage and alleviate the symptoms of arthritis.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingB">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseB" aria-expanded="false" aria-controls="collapseB">
+                  B - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseB" class="collapse" aria-labelledby="headingB" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Blepharoplasty (Eyelid Surgery):</strong> A surgical procedure to improve the appearance of the eyelids.<br>
+                <strong>Blepharospasm:</strong> Treatment for involuntary tight closure of the eyelids.<br>
+                <strong>Biopsies:</strong> A medical test involving the extraction of sample cells or tissues for examination.<br>
+                <strong>Birthmarks:</strong> Treatment options to lighten or remove birthmarks.<br>
+                <strong>Botox:</strong> A non-surgical procedure to reduce or eliminate facial lines and wrinkles.<br>
+                <strong>Bra Roll Excision:</strong> A surgical procedure to remove excess fat rolls from the back.<br>
+                <strong>Brachial Plexus Injury/Nerve Reconstruction:</strong> Surgical repair of damaged nerves in the brachial plexus.<br>
+                <strong>Breast Augmentation:</strong> A surgical procedure to increase breast size using implants.<br>
+                <strong>Breast Cancer Reconstruction:</strong> Reconstruction of the breast following mastectomy.<br>
+                <strong>Breast Implants:</strong> Insertion of implants to enhance breast size and shape.<br>
+                <strong>Breast Lift:</strong> A surgical procedure to raise and firm the breasts.<br>
+                <strong>Breast Reconstruction with Tissue Expanders:</strong> Reconstruction using tissue expanders to create space for implants.<br>
+                <strong>Breast Reduction:</strong> A surgical procedure to reduce the size of the breasts.<br>
+                <strong>Brow Lift:</strong> A surgical procedure to raise the eyebrows and reduce forehead wrinkles.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingC">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
+                  C - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseC" class="collapse" aria-labelledby="headingC" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Carpal Tunnel:</strong> Surgical treatment for carpal tunnel syndrome to relieve pressure on the median nerve.<br>
+                <strong>Cheek Implants (Malar Augmentation):</strong> Insertion of implants to enhance the cheekbones.<br>
+                <strong>Chemical Peels:</strong> A technique to improve skin texture and tone using a chemical solution.<br>
+                <strong>Chest Feminization Surgery:</strong> Surgical procedures to create a more feminine chest contour.<br>
+                <strong>Chest Masculinization Surgery:</strong> Surgical procedures to create a more masculine chest contour.<br>
+                <strong>Chin Augmentation (Mentoplasty):</strong> A surgical procedure to enhance the chin's size and shape.<br>
+                <strong>Circumferential Body Lift:</strong> A comprehensive procedure to remove excess skin and fat from the abdomen, buttocks, and thighs.<br>
+                <strong>Cleft Lip & Palate Repair:</strong> Surgical correction of cleft lip and/or palate.<br>
+                <strong>Cosmetic Fillers:</strong> Injections to fill wrinkles and add volume to the face.<br>
+                <strong>Cranial Defect Repair:</strong> Surgical repair of cranial bone defects.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingD">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseD" aria-expanded="false" aria-controls="collapseD">
+                  D - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseD" class="collapse" aria-labelledby="headingD" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Deviated Septum:</strong> Surgical correction of a deviated septum to improve breathing.<br>
+                <strong>DIEP/TRAM Flap:</strong> Breast reconstruction using the patient's own tissue from the lower abdomen.<br>
+                <strong>Dupuytren's Contracture:</strong> Surgical treatment to release thickened tissue in the palm and fingers.<br>
+                <strong>Dysport®:</strong> An injection treatment to reduce facial wrinkles.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingE">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseE" aria-expanded="false" aria-controls="collapseE">
+                  E - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseE" class="collapse" aria-labelledby="headingE" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Ear Lobe Repair:</strong> Surgical repair of torn or stretched earlobes.<br>
+                <strong>Ear Pinning Surgery:</strong> A surgical procedure to correct prominent ears.<br>
+                <strong>Electrolysis Hair Removal:</strong> A method of permanent hair removal using electrical currents.<br>
+                <strong>Embolization of Vascular Malformations:</strong> A procedure to block abnormal blood vessels.<br>
+                <strong>Endovenous Ablation:</strong> A treatment for varicose veins using heat to close off veins.<br>
+                <strong>Excessive Sweating:</strong> Treatment options to manage hyperhidrosis (excessive sweating).<br>
+                <strong>Eye Alignment:</strong> Surgical correction of eye misalignment (strabismus).<br>
+                <strong>Eye Lift Surgery:</strong> A surgical procedure to remove excess skin and fat from the upper and lower eyelids.<br>
+                <strong>Eyelid Lift (Blepharoplasty):</strong> A surgical procedure to improve the appearance of the eyelids.<br>
+                <strong>Eyelid Spasm:</strong> Treatment for involuntary eyelid muscle contractions.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingF">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseF" aria-expanded="false" aria-controls="collapseF">
+                  F - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseF" class="collapse" aria-labelledby="headingF" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Facelift:</strong> A surgical procedure to reduce wrinkles and sagging skin on the face and neck.<br>
+                <strong>Facial Feminization Surgery:</strong> Surgical procedures to create a more feminine facial appearance.<br>
+                <strong>Facial Fracture:</strong> Surgical treatment to repair broken facial bones.<br>
+                <strong>Facial Palsy (re-animation):</strong> Surgical procedures to restore movement to a paralyzed face.<br>
+                <strong>Facial Sculpting:</strong> Procedures to enhance and contour the face.<br>
+                <strong>Facials:</strong> A spa treatment to improve skin health and appearance.<br>
+                <strong>Fat Transfer:</strong> A procedure to move fat from one part of the body to another.<br>
+                <strong>Fillers:</strong> Injections to fill wrinkles and add volume to the face.<br>
+                <strong>Finger/Hand Fracture:</strong> Surgical treatment to repair broken bones in the fingers or hand.<br>
+                <strong>Flap Reconstruction:</strong> Use of tissue flaps to reconstruct areas of the body.<br>
+                <strong>Forehead Lift:</strong> A surgical procedure to raise the eyebrows and reduce forehead wrinkles.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingG">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseG" aria-expanded="false" aria-controls="collapseG">
+                  G - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseG" class="collapse" aria-labelledby="headingG" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Ganglion Excision:</strong> Surgical removal of a ganglion cyst.<br>
+                <strong>Gender Affirming Surgery:</strong> Surgical procedures to align physical appearance with gender identity.<br>
+                <strong>Gynecomastia (male breast reduction):</strong> A surgical procedure to reduce the size of male breasts.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingH">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseH" aria-expanded="false" aria-controls="collapseH">
+                  H - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseH" class="collapse" aria-labelledby="headingH" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Hidradenitis Suppurativa:</strong> Treatment options for this chronic skin condition causing small, painful lumps under the skin.<br>
+                <strong>Hyperhydrosis:</strong> Treatment options for excessive sweating.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingI">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseI" aria-expanded="false" aria-controls="collapseI">
+                  I - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseI" class="collapse" aria-labelledby="headingI" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Inverted Nipple Correction:</strong> A surgical procedure to correct inverted nipples.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingL">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseL" aria-expanded="false" aria-controls="collapseL">
+                  L - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseL" class="collapse" aria-labelledby="headingL" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Labiaplasty:</strong> A surgical procedure to reduce the size of the labia minora.<br>
+                <strong>Laser Hair Removal:</strong> A non-invasive procedure to remove unwanted hair using laser technology.<br>
+                <strong>Laser Leg Vein Removal:</strong> A procedure to remove spider veins and small varicose veins on the legs using laser.<br>
+                <strong>Laser Scar Removal:</strong> A procedure to reduce the appearance of scars using laser technology.<br>
+                <strong>Laser Skin Rejuvenation:</strong> A procedure to improve skin texture, tone, and appearance using laser technology.<br>
+                <strong>Laser Tattoo Removal:</strong> A procedure to remove unwanted tattoos using laser technology.<br>
+                <strong>Laser Vision Correction:</strong> A procedure to correct vision problems using laser technology.<br>
+                <strong>Liposuction:</strong> A surgical procedure to remove excess fat deposits and contour the body.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div the="card-header" id="headingM">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseM" aria-expanded="false" aria-controls="collapseM">
+                  M - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseM" class="collapse" aria-labelledby="headingM" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Male Breast Reduction:</strong> A surgical procedure to reduce the size of male breasts.<br>
+                <strong>Mandible Repair:</strong> Surgical repair of a fractured or injured jawbone.<br>
+                <strong>Microphlebectomy:</strong> A minimally invasive procedure to remove varicose veins.<br>
+                <strong>Mohs Surgery and Reconstruction:</strong> A surgical technique to remove skin cancer with minimal damage to surrounding tissue.<br>
+                <strong>Mole Removal:</strong> A procedure to remove moles for cosmetic or medical reasons.<br>
+                <strong>Mommy Makeover:</strong> A combination of cosmetic procedures to restore a woman's pre-pregnancy body.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingN">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseN" aria-expanded="false" aria-controls="collapseN">
+                  N - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseN" class="collapse" aria-labelledby="headingN" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>NAM Device:</strong> A device used to mold and reshape the gums, lips, and nostrils before cleft lip and palate surgery.<br>
+                <strong>Nasal Fracture:</strong> Surgical treatment to repair a broken nose.<br>
+                <strong>Nasal Obstruction:</strong> Surgical correction of blocked nasal passages.<br>
+                <strong>Neurofibroma Excision (Electrodessication):</strong> Removal of benign nerve sheath tumors.<br>
+                <strong>Neurofibromatosis:</strong> Treatment options for this genetic disorder causing tumors to form on nerve tissue.<br>
+                <strong>Neuroma:</strong> Surgical removal of a benign nerve tumor.<br>
+                <strong>Nipple/Areola Reconstruction:</strong> Reconstruction of the nipple and areola after breast surgery.<br>
+                <strong>Nipple Tattooing:</strong> Cosmetic tattooing to create the appearance of a nipple and areola.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingP">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseP" aria-expanded="false" aria-controls="collapseP">
+                  P - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseP" class="collapse" aria-labelledby="headingP" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Percutaneous Radiofrequency Closure:</strong> A minimally invasive procedure to close varicose veins.<br>
+                <strong>Phalloplasty:</strong> Surgical construction or reconstruction of a penis.<br>
+                <strong>Pilonidal Cyst:</strong> Surgical removal of a cyst near the tailbone.<br>
+                <strong>Polydactyly / Syndactyly Repair:</strong> Surgical correction of extra fingers or toes (polydactyly) or fused fingers or toes (syndactyly).<br>
+                <strong>Ptosis (drooping eyelid):</strong> Surgical correction of drooping upper eyelids.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingR">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseR" aria-expanded="false" aria-controls="collapseR">
+                  R - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseR" class="collapse" aria-labelledby="headingR" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Redness, Rosacea:</strong> Treatment options to reduce facial redness and manage rosacea symptoms.<br>
+                <strong>Rhinoplasty:</strong> A surgical procedure to reshape the nose for cosmetic or functional reasons.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingS">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseS" aria-expanded="false" aria-controls="collapseS">
+                  S - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseS" class="collapse" aria-labelledby="headingS" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Scar Revision:</strong> Surgical procedures to improve the appearance of scars.<br>
+                <strong>Scar Removal:</strong> Techniques to reduce or remove scars.<br>
+                <strong>Sclerotherapy:</strong> A procedure to treat spider veins and varicose veins by injecting a solution that causes them to collapse and fade.<br>
+                <strong>Skin Resurfacing:</strong> Procedures to improve skin texture, tone, and appearance.<br>
+                <strong>Skin Tag Removal:</strong> Removal of small, benign skin growths.<br>
+                <strong>Spider Veins:</strong> Treatment options to reduce or remove small, visible veins.<br>
+                <strong>Steroid Injection:</strong> Injections to reduce inflammation and pain in various conditions.<br>
+                <strong>Strabismus:</strong> Surgical correction of eye misalignment.<br>
+                <strong>Surgical Revision:</strong> Additional surgery to improve or correct the outcome of a previous procedure.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingT">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseT" aria-expanded="false" aria-controls="collapseT">
+                  T - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseT" class="collapse" aria-labelledby="headingT" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Tattoo Removal:</strong> Techniques to remove unwanted tattoos.<br>
+                <strong>Thigh Lift:</strong> A surgical procedure to remove excess skin and fat from the thighs.<br>
+                <strong>Top Surgery:</strong> Surgical procedures to remove breast tissue for a more masculine chest contour.<br>
+                <strong>Transgender Body Contouring:</strong> Procedures to alter body shape to align with gender identity.<br>
+                <strong>Transgender Surgical Procedures:</strong> Various surgical procedures to align physical appearance with gender identity.<br>
+                <strong>Trigger Finger:</strong> Surgical treatment to release the tendon causing trigger finger.<br>
+                <strong>Tummy Tuck:</strong> A surgical procedure to remove excess skin and fat from the abdomen and to tighten the muscles of the abdominal wall.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingV">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseV" aria-expanded="false" aria-controls="collapseV">
+                  V - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseV" class="collapse" aria-labelledby="headingV" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Varicose Veins:</strong> Treatment options to reduce or remove enlarged veins.<br>
+                <strong>Vascular Malformations:</strong> Treatment options for abnormal blood vessel formations.<br>
+                <strong>Veins:</strong> General treatments for vein conditions.<br>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingW">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseW" aria-expanded="false" aria-controls="collapseW">
+                  W - Procedures
+                </button>
+              </h2>
+            </div>
+            <div id="collapseW" class="collapse" aria-labelledby="headingW" data-parent="#proceduresAccordion">
+              <div class="card-body">
+                <strong>Waxing:</strong> A method of temporary hair removal using wax.<br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!-- /Glossary Modal -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<!-- Inquiry Form Section -->
+<section id="inquiry-form" class="inquiry-form section py-5" style="background-color: #FDDC5C;">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center mb-5" data-aos="fade-up">
+    <h2 class="display-4" style="color: #570987;">Procedure Inquiry</h2>
+    <p class="lead" style="color: #570987;">Select procedures from our glossary and email your inquiry for companion services.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <form action="send_inquiry.php" method="post" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="name" class="form-label" style="color: #570987;">Your Name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email" class="form-label" style="color: #570987;">Your Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="procedures" class="form-label" style="color: #570987;">Select Procedures</label>
+            <select name="procedures[]" id="procedures" class="form-control" multiple required style="height: auto;">
+              <!-- Populate this list with procedures from the glossary -->
+              <option value="Abdominoplasty">Abdominoplasty</option>
+              <option value="Arm Lift (Brachioplasty)">Arm Lift (Brachioplasty)</option>
+              <option value="Arthritis">Arthritis</option>
+              <option value="Blepharoplasty (Eyelid Surgery)">Blepharoplasty (Eyelid Surgery)</option>
+              <option value="Blepharospasm">Blepharospasm</option>
+              <option value="Biopsies">Biopsies</option>
+              <option value="Birthmarks">Birthmarks</option>
+              <option value="Botox">Botox</option>
+              <option value="Bra Roll Excision">Bra Roll Excision</option>
+              <option value="Brachial Plexus Injury/Nerve Reconstruction">Brachial Plexus Injury/Nerve Reconstruction</option>
+              <option value="Brachioplasty (Arm Lift)">Brachioplasty (Arm Lift)</option>
+              <option value="Breast Augmentation">Breast Augmentation</option>
+              <option value="Breast Cancer Reconstruction">Breast Cancer Reconstruction</option>
+              <option value="Breast Implants">Breast Implants</option>
+              <option value="Breast Lift">Breast Lift</option>
+              <option value="Breast Reconstruction with Tissue Expanders">Breast Reconstruction with Tissue Expanders</option>
+              <option value="Breast Reduction">Breast Reduction</option>
+              <option value="Brow Lift">Brow Lift</option>
+              <option value="Carpal Tunnel">Carpal Tunnel</option>
+              <option value="Cheek Implants (Malar Augmentation)">Cheek Implants (Malar Augmentation)</option>
+              <option value="Chemical Peels">Chemical Peels</option>
+              <option value="Chest Feminization Surgery">Chest Feminization Surgery</option>
+              <option value="Chest Masculinization Surgery">Chest Masculinization Surgery</option>
+              <option value="Chin Augmentation (Mentoplasty)">Chin Augmentation (Mentoplasty)</option>
+              <option value="Circumferential Body Lift">Circumferential Body Lift</option>
+              <option value="Cleft Lip & Palate Repair">Cleft Lip & Palate Repair</option>
+              <option value="Cosmetic Fillers">Cosmetic Fillers</option>
+              <option value="Cranial Defect Repair">Cranial Defect Repair</option>
+              <option value="Deviated Septum">Deviated Septum</option>
+              <option value="DIEP/TRAM Flap">DIEP/TRAM Flap</option>
+              <option value="Dupuytren's Contracture">Dupuytren's Contracture</option>
+              <option value="Dysport">Dysport</option>
+              <option value="Ear Lobe Repair">Ear Lobe Repair</option>
+              <option value="Ear Pinning Surgery">Ear Pinning Surgery</option>
+              <option value="Electrolysis Hair Removal">Electrolysis Hair Removal</option>
+              <option value="Embolization of Vascular Malformations">Embolization of Vascular Malformations</option>
+              <option value="Endovenous Ablation">Endovenous Ablation</option>
+              <option value="Excessive Sweating">Excessive Sweating</option>
+              <option value="Eye Alignment">Eye Alignment</option>
+              <option value="Eye Lift Surgery">Eye Lift Surgery</option>
+              <option value="Eyelid Lift (Blepharoplasty)">Eyelid Lift (Blepharoplasty)</option>
+              <option value="Eyelid Spasm">Eyelid Spasm</option>
+              <option value="Facelift">Facelift</option>
+              <option value="Facial Feminization Surgery">Facial Feminization Surgery</option>
+              <option value="Facial Fracture">Facial Fracture</option>
+              <option value="Facial Palsy (re-animation)">Facial Palsy (re-animation)</option>
+              <option value="Facial Sculpting">Facial Sculpting</option>
+              <option value="Facials">Facials</option>
+              <option value="Fat Transfer">Fat Transfer</option>
+              <option value="Fillers">Fillers</option>
+              <option value="Finger/Hand Fracture">Finger/Hand Fracture</option>
+              <option value="Flap Reconstruction">Flap Reconstruction</option>
+              <option value="Forehead Lift">Forehead Lift</option>
+              <option value="Ganglion Excision">Ganglion Excision</option>
+              <option value="Gender Affirming Surgery">Gender Affirming Surgery</option>
+              <option value="Gynecomastia (male breast reduction)">Gynecomastia (male breast reduction)</option>
+              <option value="Hidradenitis Suppurativa">Hidradenitis Suppurativa</option>
+              <option value="Hyperhydrosis">Hyperhydrosis</option>
+              <option value="Inverted Nipple Correction">Inverted Nipple Correction</option>
+              <option value="Labiaplasty">Labiaplasty</option>
+              <option value="Laser Hair Removal">Laser Hair Removal</option>
+              <option value="Laser Leg Vein Removal">Laser Leg Vein Removal</option>
+              <option value="Laser Scar Removal">Laser Scar Removal</option>
+              <option value="Laser Skin Rejuvenation">Laser Skin Rejuvenation</option>
+              <option value="Laser Tattoo Removal">Laser Tattoo Removal</option>
+              <option value="Laser Vision Correction">Laser Vision Correction</option>
+              <option value="Liposuction">Liposuction</option>
+              <option value="Male Breast Reduction">Male Breast Reduction</option>
+              <option value="Mandible Repair">Mandible Repair</option>
+              <option value="Microphlebectomy">Microphlebectomy</option>
+              <option value="Mohs Surgery and Reconstruction">Mohs Surgery and Reconstruction</option>
+              <option value="Mole Removal">Mole Removal</option>
+              <option value="Mommy Makeover">Mommy Makeover</option>
+              <option value="NAM Device">NAM Device</option>
+              <option value="Nasal Fracture">Nasal Fracture</option>
+              <option value="Nasal Obstruction">Nasal Obstruction</option>
+              <option value="Neurofibroma Excision (Electrodessication)">Neurofibroma Excision (Electrodessication)</option>
+              <option value="Neurofibromatosis">Neurofibromatosis</option>
+              <option value="Neuroma">Neuroma</option>
+              <option value="Nipple/Areola Reconstruction">Nipple/Areola Reconstruction</option>
+              <option value="Nipple Tattooing">Nipple Tattooing</option>
+              <option value="Percutaneous Radiofrequency Closure">Percutaneous Radiofrequency Closure</option>
+              <option value="Phalloplasty">Phalloplasty</option>
+              <option value="Pilonidal Cyst">Pilonidal Cyst</option>
+              <option value="Polydactyly/Syndactyly Repair">Polydactyly/Syndactyly Repair</option>
+              <option value="Ptosis (drooping eyelid)">Ptosis (drooping eyelid)</option>
+              <option value="Redness, Rosacea">Redness, Rosacea</option>
+              <option value="Rhinoplasty">Rhinoplasty</option>
+              <option value="Scar Revision">Scar Revision</option>
+              <option value="Scar Removal">Scar Removal</option>
+              <option value="Sclerotherapy">Sclerotherapy</option>
+              <option value="Skin Resurfacing">Skin Resurfacing</option>
+              <option value="Skin Tag Removal">Skin Tag Removal</option>
+              <option value="Spider Veins">Spider Veins</option>
+              <option value="Steroid Injection">Steroid Injection</option>
+              <option value="Strabismus">Strabismus</option>
+              <option value="Surgical Revision">Surgical Revision</option>
+              <option value="Tattoo Removal">Tattoo Removal</option>
+              <option value="Thigh Lift">Thigh Lift</option>
+              <option value="Top Surgery">Top Surgery</option>
+              <option value="Transgender Body Contouring">Transgender Body Contouring</option>
+              <option value="Transgender Surgical Procedures">Transgender Surgical Procedures</option>
+              <option value="Trigger Finger">Trigger Finger</option>
+              <option value="Tummy Tuck">Tummy Tuck</option>
+              <option value="Varicose Veins">Varicose Veins</option>
+              <option value="Vascular Malformations">Vascular Malformations</option>
+              <option value="Veins">Veins</option>
+              <option value="Waxing">Waxing</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="message" class="form-label" style="color: #570987;">Additional Message</label>
+            <textarea name="message" id="message" class="form-control" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-custom mt-3" style="background-color: #570987; color: #fff;">Submit Inquiry</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</section><!-- /Inquiry Form Section -->
+
+
+<!-- Vault Section -->
+<section id="vault" class="vault section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Vault Access</h2>
+    <p>Securely store and access comprehensive guides and definitions of cosmetic procedures. A subscription fee may apply for access to the vault.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3>Subscription Access</h3>
+        <p>To access our comprehensive vault of cosmetic procedure guides, please subscribe. Enjoy unlimited access to detailed procedure information and personalized storage options.</p>
+        <a href="#" class="btn btn-custom mt-3" style="color: #570987;">Subscribe Now</a>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="content ps-0 ps-lg-5" style="list-style: none;">
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Securely store detailed procedure guides.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Access comprehensive definitions of cosmetic procedures.</span></li>
+            <li><i class="bi bi-check-circle-fill"></i> <span>Enjoy unlimited access with a subscription.</span></li>
+          </ul>
+          <p>
+            Our vault provides a secure and convenient way to keep all your cosmetic procedure information in one place. Subscribe today to unlock this premium feature.
+          </p>
+          <a href="#" class="btn btn-custom mt-3" style="color: #570987;">Access Vault</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Vault Section -->
+
 <style>
   .btn-custom {
-    background-color: #A020F0
+    background-color: #A020F0;
     color: #FDDC5C;
-    border-color: #A020F0
+    border-color: #A020F0;
   }
   .btn-custom:hover {
-    background-color:  #4B0082
+    background-color: #4B0082;
     color: #FDDC5C;
-    border-color:  #4B0082
+    border-color: #4B0082;
   }
 </style>
 
@@ -261,7 +824,7 @@
 <section id="consultation" class="consultation section" style="background-color: #FDDC5C;">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Consultation</h2>
+    <h2 style="color: #570987;">Consultation</h2>
     <p>Modify consultation fees and explore our tailored services.</p>
   </div><!-- End Section Title -->
 
@@ -294,7 +857,7 @@
                 <option value="evening">Evening</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-purple" style="background-color: #A020F0 color: #FDDC5C;">Book Now</button>
+            <button type="submit" class="btn btn-purple" style="color: #570987;"> <b>Book Now</b></button>
           </form>
         </div>
       </div>
@@ -316,8 +879,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2 style="color: #FDDC5C; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Our Services</h2>
-    <p style="color: #FDDC5C; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Our companion care services are designed to support you through every step of your medical journey, ensuring you receive the highest level of care and attention.</p>
+    <h2 style="color: #570987; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Our Services</h2>
+    <p style="color: black text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Our companion care services are designed to support you through every step of your medical journey, ensuring you receive the highest level of care and attention.</p>
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -328,9 +891,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-user-md" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Pre and Post-Op Care</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Pre and Post-Op Care</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Receive professional care before and after your surgery to ensure a smooth recovery.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -339,9 +902,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-prescription-bottle-alt" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Prescription Pick-Up</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Prescription Pick-Up</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Convenient prescription pick-up services to ensure you have your medications when you need them.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -350,9 +913,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-plane" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Airport Pick-Up & Drop-Off</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Airport Pick-Up & Drop-Off</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Stress-free transportation to and from the airport for your medical appointments.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -361,9 +924,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-hamburger" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Meal Preparation</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Meal Preparation</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Nutritious meal preparation services to aid in your recovery and overall well-being.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -372,9 +935,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-heartbeat" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Companion Care</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Companion Care</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Comprehensive companion care to provide you with support and companionship throughout your recovery.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -383,9 +946,9 @@
           <div class="icon" style="background-color:  #4B0082 color: #FDDC5C; text-align: center; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
             <i class="fas fa-hand-holding-heart" style="font-size: 24px;"></i>
           </div>
-          <h3 style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Emotional Support</h3>
+          <h3 style="color: #570987; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Emotional Support</h3>
           <p style="color: #000; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">Emotional support services to help you navigate the mental and emotional aspects of your medical journey.</p>
-          <a href="#" class="readmore stretched-link" style="color: #000;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
+          <a href="#" class="readmore stretched-link" style="color: #570987;">Read more <i class="bi bi-arrow-right" style="color: #000;"></i></a>
         </div>
       </div><!-- End Service Item -->
 
@@ -400,7 +963,7 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Packages</h2>
+    <h2 style="color: #570987;">Packages</h2>
     <p>Choose the best package that suits your needs</p>
   </div><!-- End Section Title -->
 
@@ -410,7 +973,7 @@
 
       <div class="col-lg-4">
         <div class="package-item" style="background-color: #FDDC5C; color: #A020F0">
-          <h3>Basic Package</h3>
+          <h3 style="color: #570987;">Basic Package</h3>
           <div class="icon">
             <i class="bi bi-box" style="color: #A020F0"></i>
           </div>
@@ -428,7 +991,7 @@
 
       <div class="col-lg-4">
         <div class="package-item featured" style="background-color: #FDDC5C; color: #A020F0">
-          <h3>Premium Package</h3>
+          <h3 style="color: #570987;" >Premium Package</h3>
           <div class="icon">
             <i class="bi bi-rocket" style="color: #A020F0"></i>
           </div>
@@ -447,7 +1010,7 @@
 
       <div class="col-lg-4">
         <div class="package-item" style="background-color: #FDDC5C; color: #A020F0">
-          <h3>Enterprise Package</h3>
+          <h3 style="color: #570987;">Enterprise Package</h3>
           <div class="icon">
             <i class="bi bi-send" style="color: #A020F0"></i>
           </div>
@@ -479,7 +1042,7 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
+    <h2 style="color: #570987;">Contact</h2>
     <p>Get in touch with us Today!</p>
   </div><!-- End Section Title -->
 
